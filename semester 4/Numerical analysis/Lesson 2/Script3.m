@@ -1,0 +1,18 @@
+clc;
+clear;
+close all;
+x = linspace(-4*pi, 4*pi, 1000);
+y = sin(x.^2).*(cos(x)).^3;
+figure('Name','Y as a function of X');
+plot(x,y);
+xlabel('x');
+ylabel('y');
+title('Y as a func of X');
+grid on;
+y2 = sin(x.^2).*(cos(x)).^3+1;
+figure('Name','Two functions');
+plot(x,y,'b',x,y2,'r');
+xlabel('x');
+ylabel('y');
+title('Y as a func of X');
+grid on;

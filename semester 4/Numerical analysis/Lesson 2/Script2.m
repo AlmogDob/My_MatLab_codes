@@ -1,0 +1,11 @@
+clc;
+clear;
+close;
+a = [1,-2,5];
+b = [0;-3;3];
+sol1 = a*b;
+sol2 = b*a;
+k = [0,-2,2];
+sol3 = a*k';
+c = b.^2;
+d = a'.*b;
