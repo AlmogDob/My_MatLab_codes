@@ -1,0 +1,19 @@
+function d_state_dt = ODE(t, state)
+    theta = 1;
+
+    r = 
+
+    x1 = state(1,1);
+    x2 = state(2,1);    
+    x3 = state(3,1);
+    
+    z1 = 0;
+    
+    u  = -x3 + 2 * r_ddot;
+
+    x1_dot = x2+theta*x1^2;
+    x2_dot = x3 + u;
+    x3_dot = x1 - x3;
+
+    d_state_dt = [x1_dot; x2_dot; x3_dot];
+end

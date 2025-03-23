@@ -5,7 +5,6 @@ v_vec = [state(2);state(4);state(6)];
 
 global_variabels
 
-t
 C_star = calc_C_star(t_f, t, n);
 [phi_11, phi_12, ~, ~] = calc_phis(t_f, t, n);
 
